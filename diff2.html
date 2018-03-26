@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Document</title>
+<style type='text/css'>
+.diff-old-a {
+  font-size: smaller;
+  color: red;
+}
+
+.diff-new { background-color: yellow; }
+.diff-chg { background-color: lime; }
+.diff-new:before,
+.diff-new:after
+    { content: "\2191" }
+.diff-chg:before, .diff-chg:after
+    { content: "\2195" }
+.diff-old { text-decoration: line-through; background-color: #FBB; }
+.diff-old:before,
+.diff-old:after
+    { content: "\2193" }
+:focus { border: thin red solid}
+</style>
+</head>
+
+<body>
+<h1>
+Table
+with
+<del class="diff-old">3
+</del>
+<ins class="diff-chg">2
+</ins>
+Columns
+</h1>
+<table>
+<caption>
+Table
+with
+<del class="diff-old">3
+</del>
+<ins class="diff-chg">2
+</ins>
+Columns
+</caption>
+<thead>
+<tr>
+<th>
+Header
+Column
+1
+</th>
+<th>
+Header
+Column
+2
+</th>
+<th>
+<del class="diff-old">Header
+Column
+3
+</del>
+</th>
+</tr>
+</thead>
+</table>
+<tbody>
+<tr>
+<td>
+Row
+1
+Column
+1
+</td>
+<td>
+Row
+1
+Column
+2
+</td>
+<td>
+<del class="diff-old">Row
+1
+Column
+3
+</del>
+</td>
+</tr>
+<tr>
+<td>
+<ins class="diff-new">New
+</ins>
+Row
+2
+Column
+1
+</td>
+<td>
+Row
+2
+Column
+2
+</td>
+<td>
+<del class="diff-old">Row
+2
+Column
+3
+</del>
+</td>
+</tr>
+<tr>
+<td>
+Row
+3
+Column
+1
+</td>
+<td>
+<ins class="diff-new">New
+</ins>
+Row
+3
+Column
+2
+</td>
+<td>
+<del class="diff-old">Row
+3
+Column
+3
+</del>
+</td>
+</tr>
+</tbody>
+</body>
+</html>
